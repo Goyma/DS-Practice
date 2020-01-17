@@ -17,7 +17,13 @@ public class Anagram {
 		int z2=c2.length;
 		Arrays.sort(c1);
 		Arrays.sort(c2);
+		if(z1!=z2)
+		{
+			System.out.println("Not Anagrams");
+		}
+		else{
 		int c=1;
+		
 		for(int i=0;i<z1;i++)
 		{
 			if(c1[i]!=c2[i])
@@ -33,7 +39,7 @@ public class Anagram {
 		{
 			System.out.println("Anagrams");
 		}
-	}
+	}}
 
 }
 
